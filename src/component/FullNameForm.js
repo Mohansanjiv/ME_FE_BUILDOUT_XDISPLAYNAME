@@ -52,8 +52,8 @@ const FullNameForm = () => {
                     </Box>
                 </form>
 
-                {/*  Must be directly after <form> for cy.get("form").next() to work */}
-                {fullName && <p>{fullName}</p>}
+                {fullName && <p>Full Name: {fullName}</p>}
+
             </Box>
         </Box>
     );
