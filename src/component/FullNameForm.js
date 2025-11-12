@@ -11,13 +11,8 @@ const FullNameForm = () => {
 
         const fName = firstName.trim();
         const lName = lastName.trim();
+        setFullName(`Full Name: ${fName} ${lName}`);
 
-        //  Only show full name when both fields are filled
-        if (fName && lName) {
-            setFullName(`Full Name: ${fName} ${lName}`);
-        } else {
-            setFullName("");
-        }
     };
 
     return (
