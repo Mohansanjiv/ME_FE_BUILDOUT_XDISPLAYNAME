@@ -12,7 +12,7 @@ const FullNameForm = () => {
         const fName = firstName.trim();
         const lName = lastName.trim();
 
-        // Display only when both fields are filled
+        //  Only show full name when both fields are filled
         if (fName && lName) {
             setFullName(`Full Name: ${fName} ${lName}`);
         } else {
@@ -33,7 +33,14 @@ const FullNameForm = () => {
                 <Typography variant="h5">Full Name Display</Typography>
 
                 <form onSubmit={handleSubmit}>
-                    <Box sx={{ display: "flex", flexDirection: "column", gap: 2, width: 300 }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: 2,
+                            width: 300,
+                        }}
+                    >
                         <TextField
                             label="First Name"
                             value={firstName}
@@ -49,11 +56,9 @@ const FullNameForm = () => {
                         <Button type="submit" variant="contained" color="success">
                             Submit
                         </Button>
+                        {fullName && <p>{fullName}</p>}
                     </Box>
                 </form>
-
-                <p>{fullName}</p>
-
             </Box>
         </Box>
     );
