@@ -52,7 +52,7 @@ const FullNameForm = () => {
                     </Box>
                 </form>
 
-                {fullName && <p>Full Name: {fullName}</p>}
+                <p>{fullName}</p>
 
             </Box>
         </Box>
