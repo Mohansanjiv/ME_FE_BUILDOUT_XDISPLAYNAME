@@ -51,7 +51,7 @@ const FullNameForm = () => {
                         <Button type="submit" variant="contained" color="success">
                             Submit
                         </Button>
-                        {fullName && <p>{fullName}</p>}
+                        <p>{fullName}</p>
                     </Box>
                 </form>
             </Box>
